@@ -1,0 +1,115 @@
+/* Your custom styles */
+/* Main Navbar */
+.video-fluid {
+  width: 100%;
+  height: auto;
+}
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+ 
+  .view {
+    height: 100%;
+  }
+
+  @media (max-width: 740px) {
+    .view {
+      height: 1000px;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .view {
+      height: 600px;
+    }
+  }
+
+  .btn .fa {
+    margin-left: 3px;
+  }
+
+  .top-nav-collapse {
+    background-color: #2196f3 !important;
+  }
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+ .navbar:not(.top-nav-collapse) {
+  background: #2196f3 !important;
+ }
+}
+
+.btn-white {
+  color: black !important;
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+.rgba-gradient {
+  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+}
+
+/* Main Navbar */
+/*Body */
+.body
+{
+font-family: Crimson Text;
+letter-spacing: 2px;
+}
+/*Body */
+#mainnav1 
+{
+	background-color: #2196f3;
+}
+
+#foot1
+{
+  font-family: sans-serif;
+	background-color: #2E9DD7  ;
+}
+.btn
+{
+	background-color: #2196f3;
+}
+#service> row>col
+{
+	background-color: #000;
+	opacity: 0.5;
+}

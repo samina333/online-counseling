@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en" class="full-height" ng-app="myapp">
+<head>
+<meta charset="utf-8">
+<title>SessionForm3</title>
+ <link rel="icon" type="image/png" href="img/icons/sc.png">
+<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">   
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="css/mystyle.css" rel="stylesheet">
+    <!-------Font Stylesheet---------------------->
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'> 
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eutemia" rel="stylesheet">
+    <link hre="https://fonts.google.com/specimen/Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dancing+Script">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster+Two">
+</head>
+<style type="text/css">
+
+</style>
+<!--------------------------------------------------------------Main Code Starts--------------------------------------------------->
+<body>
+<!---------------------------------------------Main Navbar & Introduction-------------------------------------------------------------------->
+  <!---------------------------------------mIAN oBJECTIVE sECTion Section------------------------------->
+<!--Main Layout-->
+<main class=" ">
+ <!---------------------------------------------------------Form session no 1------------------------------------------>
+<div class="container mt-5 mb-5">
+<div class="row">
+<div class="col-md-12 ">
+
+<!-- Material form subscription -->
+<div class="card">
+
+    <h5 class="card-header info-color h3-responsive white-text text-center py-4">
+        <strong><i class="fa fa-heartbeat fa-2x text-danger"></i></strong>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5">
+
+        <!-- Form -->
+        <form class="" style="color: #757575;"  method="post" ng-controller="loginController">
+
+            <h5 class="font-weight-bold mx-auto text-dark"> </h5>
+            <p class="blue-grey-text text-lowercase"></p>
+
+            <p>
+                <a href="" class="text-dark font-weight-bold" target="_blank">Record Your Responses Below.<i class="fa fa-h-square"></i></a>
+            </p>
+          <!-- Current Sleeping -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4" >
+          <p class="text-dark font-weight-bold" for="quest1" >Q1. I do not Tire Quickly.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest1y" name="quest1" ng-model="data.one" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest1y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest1n" name="quest1" ng-model="data.one" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest1n">2. No</label>
+          </div>
+          </div><!-----row-------->
+
+          <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest2" >Q2. I Believe I am No More Nervous Then Others.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest2y" name="quest2" ng-model="data.two" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest2y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest2n" name="quest2" ng-model="data.two" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest2n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div>
+
+
+
+         <!-- Excersie -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest" >Q3. I Have Very Few Headaches.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest3y" name="quest3" ng-model="data.three" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest3y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest3n" name="quest3" ng-model="data.three" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest3n">2. No</label>
+          </div>
+        </div><!-----row-------->
+
+             <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest4" >Q4. I Work Under A Great Deal Of Tension.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest4y" name="quest4" ng-model="data.four" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest4y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest4n" name="quest4" ng-model="data.four" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest4n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div>
+
+           <!-- Excersie -->
+           <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest5" >Q5. I Frequently Notice My Handshakes When I Try To Do Something .</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest5y" name="quest5" ng-model="data.five" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest5y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest5n" name="quest5" ng-model="data.five" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest5n">2. No</label>
+          </div>
+        </div><!-----row-------->
+
+   <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest6" >Q6. I Bush No More Often Then Others.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest6y" name="quest6" ng-model="data.six" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest6y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest6n" name="quest6" ng-model="data.six" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest6n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div>
+
+   <!-- Excersie -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest7" >Q7. I Have Diarrhea one a month or more.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest7y" name="quest7" ng-model="data.seven" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest7y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest7n" name="quest7" ng-model="data.seven" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest7n">2. No</label>
+          </div>
+        </div><!-----row-------->
+
+   <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest8" >Q8. I Worry Quite A Bit Over Possible Misfortunes.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest8y" name="quest8" ng-model="data.eight" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest8y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest8n" name="quest8" ng-model="data.eight" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest8n">2. No</label>
+          </div>
+        </div><!-----row-------->
+        </div><!------row--------------->
+
+          <!-- Excersie -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest9" >Q9. I Practically Never Blush.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest9y" name="quest9" ng-model="data.nine" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest9y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest9n" name="quest9" ng-model="data.nine" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest9n">2. No</label>
+          </div>
+        </div><!-----row-------->
+         <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest10" >Q10. I am Often Afraid I am Going To Blush.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest10y" name="quest10" ng-model="data.ten" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest10y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest10n" name="quest10" ng-model="data.ten" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest10n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!----main row------->
+
+          <!-- Excersie -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest11" >Q11. My Hands And Feet Are Usually Warm Enough.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest11y" name="quest11" ng-model="data.eleven" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest11y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest11n" name="quest11" ng-model="data.eleven" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest11n">2. No</label>
+          </div>
+        </div><!-----row-------->
+     <!-- Current Sleeping -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest12" >Q12. I Sweat Very Easily Even On Cool Days.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest12y" name="quest12" ng-model="data.twelve" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest12y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest12n" name="quest12" ng-model="data.twelve" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest12n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!-----row----------->
+
+          <!-- Excersie -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest13" >Q13. Sometimes When Embarrased, I Break Out In A Sweat.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest13y" name="quest13" ng-model="data.thirteen" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest13y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest13n" name="quest13" ng-model="data.thirteen" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest13n">2. No</label>
+          </div>
+        </div><!-----row-------->
+         <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest14" >Q14. I Hardly Ever Notice My Heart Pounding & I Am Seldom Short Of Breath.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest14y" name="quest14"ng-model="data.fourteen" ng-value="'yes'" >
+          <label class="form-check-label text-dark" for="quest14y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest14n" name="quest14" ng-model="data.fourteen" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest14n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!-----row---->
+
+
+             <!-- Excersie -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest15" >Q15. I Feel Hungry Almost, All Of The Time.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest15y" name="quest15" ng-model="data.fifteen" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest15y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest15n" name="quest15" ng-model="data.fifteen" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest15n">2. No</label>
+          </div>
+        </div><!-----row-------->
+           <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest16" >Q16. I Am Very Seldom troubled By Constipation.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest16y" name="quest16" ng-model="data.sixteen" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest16y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest16n" name="quest16" ng-model="data.sixteen" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest16n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!---row------->
+         <!-- Excersie -->
+         <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest17" >17. I Have A Great Deal Of Stomach Trouble.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest17y" name="quest17" ng-model="data.seventeen" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest17y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest17n" name="quest17" ng-model="data.seventeen" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest17n">2. No</label>
+          </div>
+        </div><!-----row-------->
+        <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest18" >18. I Have Hard Periods In Which I Lost Sleep Over Worry.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest18y" name="quest18" ng-model="data.eighteen" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest18y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest18n" name="quest18" ng-model="data.eighteen" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest18n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!---row---->
+
+ <!-- Excersie -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest19" >19. I Am Easily Embarrassed.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest19y" name="quest19" ng-model="data.ninteen" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest19y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest19n" name="quest19" ng-model="data.ninteen" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest19n">2. No</label>
+          </div>
+        </div><!-----row-------->
+
+ <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest20" >20. I Am More Sensitive Then Most Other People.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest20y" name="quest20" ng-model="data.twenty" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest20y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest20n" name="quest20" ng-model="data.twenty" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest20n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!----row----------->
+<!-- Excersie -->
+           <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest21" >21. I Frequently Find Myslef Worrying About Something.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest21y" name="quest21" ng-model="data.twentyone" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest21y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest21n" name="quest21" ng-model="data.twentyone" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest21n">2. No</label>
+          </div>
+        </div><!-----row-------->
+  <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest22" >22. I Wish I Could Be As Happy As Others Seems To Be.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest22y" name="quest22" ng-model="data.twentytwo" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest22y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest22n" name="quest22" ng-model="data.twentytwo" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest22n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!----row------->
+        <!-- Excersie -->
+        <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest23" >23. I Am Usually Calm And Not Easily Upset.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest23y" name="quest23" ng-model="data.twentythree" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest23y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest23n" name="quest23" ng-model="data.twentythree" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest23n">2. No</label>
+          </div>
+        </div><!-----row-------->
+   <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest24" >24. I Feel Anxiety About Someone Or Something Almost All The Time.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest24y" name="quest24" ng-model="data.twentyfour" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest24y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest24n" name="quest24" ng-model="data.twentyfour" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest24n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!--row-------->
+         <!-- Excersie -->
+         <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest25" >25. I Am Happy Most Of The Time.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest25y" name="quest25" ng-model="data.twentyfive" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest25y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest25n" name="quest25"ng-model="data.twentyfie" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest25n">2. No</label>
+          </div>
+        </div><!-----row-------->
+  
+    <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest26" >26. It Makes Me Nervous To Have To Wait.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest26y" name="quest26" ng-model="data.twentysix" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest26y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest26n" name="quest26" ng-model="data.twentysix" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest26n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!---row--------------->
+            <!-- Excersie -->
+            <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest27" >27. Sometimes I ecome So Excited I find It Hard To Get To Sleep.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest27y" name="quest27" ng-model="data.twentyseven" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest27y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest27n" name="quest27" ng-model="data.twentyseven" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest27n">2. No</label>
+          </div>
+        </div><!-----row-------->
+            <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest28" >28. I Have Sometimes Felt That Difficulties Piling Up So High, I couldn't Get Over Them.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest28y" name="quest28" ng-model="data.twentyeight" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest28y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest28n" name="quest28" ng-model="data.twentyeight" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest28n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!----row------------->
+            <!-- Excersie -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest29" >29. I Admit I Have Felt Beyond Reasons Over Small Things.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest29y" name="quest29" ng-model="data.twentynine" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest29y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest29n" name="quest29" ng-model="data.twentynine" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest29n">2. No</label>
+          </div>
+        </div><!-----row-------->
+                  <!-- Excersie -->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest30" >30. I Certainly Fell Useless At Times.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest30y" name="quest30" ng-model="data.thirty" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest30y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest30n" name="quest30" ng-model="data.thirty" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest30n">2. No</label>
+          </div>
+        </div>
+        </div><!-----row-------->
+          <!-- Excersie -->
+          <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest31" >31. I Find It Hard To Keep My Mind On a Job Or Task.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest31y" name="quest31" ng-model="data.thirtyone" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest31y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest31n" name="quest31" ng-model="data.thirtyone" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest31n">2. No</label>
+          </div>
+        </div><!-----row-------->
+             <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest32" >32. I Am Usually Self-Conscious.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest32y" name="quest32" ng-model="data.thirtytwo" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest32y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest32n" name="quest32" ng-model="data.thirtytwo" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest32n">2. No</label>
+          </div>
+        </div>
+        </div><!-----row-------->
+        <div class="row">
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest33" >33. I Am Inclined To Take Things Hard.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest33y" name="quest33" ng-model="data.thirtythree" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest33y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest33n" name="quest33" ng-model="data.thirtythree" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest33n">2. No</label>
+          </div>
+        </div><!-----row-------->
+          <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest34" >34. At Times I Think I Am No Good At All.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest34y" name="quest34" ng-model="data.thirtyfour" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest34y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest34n" name="quest34" ng-model="data.thirtyfour" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest34n">2. No</label>
+          </div>
+        </div>
+        </div><!-----row-------->
+
+          <div class="row">
+           <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest35" >35. I Am Certainly lacking In Self-Confidence.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest35y" name="quest35" ng-model="data.thirtyfive" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest35y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest35n" name="quest35" ng-model="data.thirtyfive" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest35n">2. No</label>
+          </div>
+        </div><!-----row-------->
+           <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest36" >36.I Sometimes  Feel That I Am About To Go To Pieces.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest36y" name="quest36" ng-model="data.thirtysix" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest36y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest36n" name="quest36" ng-model="data.thirtysix" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest36n">2. No</label>
+          </div>
+        </div><!-----row-------->
+      </div><!---row------->
+      <div class="row">
+           <div class="col-md-6 mt-4 mb-4">
+          <p class="text-dark font-weight-bold" for="quest37" >37. I Am Entirely Self-Confident.</p>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest37y" name="quest37" ng-model="data.thirtyseven" ng-value="'yes'">
+          <label class="form-check-label text-dark" for="quest37y">1. Yes</label>
+          </div>
+          <div class="form-check  form-check-inline ">
+          <input type="radio" class="form-check-input" id="quest37n" name="quest37" ng-model="data.thirtyseven" ng-value="'no'">
+          <label class="form-check-label text-dark" for="quest37n">2. No</label>
+          </div>
+        </div>
+        </div><!-----row-------->
+            <!-- Sign in button -->
+            <button class="btn  btn-rounded bg-info  z-depth-0 my-4 waves-effect" type="submit" id="mybtn" ng-click="submit()">Submit</button>
+
+            <a class="btn  bg-danger btn-rounded  fa fa-medikit animated pulse  z-depth-0 my-4 waves-effect" href="Medicalsession1.html" >Facing Other Medical Issue</a>
+
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>
+<!-- Material form subscription -->
+
+</div><!--col----->
+</div><!-------------------row---------------->
+</div><!----------conatiner-------------------->
+ <!----------------------------------------------------------Form session no 1------------------------------------------>
+
+
+  <!------------------------------------------------------------Main Services Section----------------------------------------->
+</main>
+<!--Main Layout-->
+
+<!---------------Footer----------->
+
+
+
+<!---------------Footer----------->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>    
+  
+<script type="text/javascript">
+  $(document).ready(function() {
+   $('.mdb-select').material_select();
+ });
+  // Data Picker Initialization
+$('.datepicker').pickadate();
+    </script>
+      
+ <script>
+ var app = angular.module('myapp', []); 
+         app.controller('loginController', function ($scope, $http) { 
+    
+    
+  $scope.submit= function(event) {    
+  
+   var result=[];
+  var temp = [];
+        
+var result = Object.keys($scope.data).map(e=>$scope.data[e]);
+
+console.log(result);
+  
+  var countyes=0;
+   var countno=0;
+  //alert(result.length);
+  
+for(var i=0;i<result.length;i++)
+  {
+  //console.log(result[i]);
+  //console.log(result.length);
+  if(result[i]=="yes")
+  {
+  countyes++;
+  }
+  else if(result[i]=="no")
+  {
+  countno++;
+  }
+  
+};
+
+  console.log(countyes);
+
+if((countyes>="16")&&(countyes<="37"))
+{
+  alert("you have severe anxiety" + "you must refer to psychologist");
+   window.location.replace('PsyForm1.html');
+                        
+
+}
+
+else if((countyes>="6")&&(countyes<="15"))
+{
+  alert("you have normal anxiety       " + " ....!!!to minimize it enjoy our Services...!!!");
+   window.location.replace('MotivationalMainPage1.html');
+                        
+
+}
+else if((countyes>="0")&&(countyes<="5"))
+{
+  alert("Congratulations...!!! you dont have any sort of anxiety   "+"  Enjoy healthy activities");
+  window.location.replace('MotivationalMainPage1.html');
+    
+}
+
+  }
+  
+  
+ });
+    </script>
+</body>
+</html>
